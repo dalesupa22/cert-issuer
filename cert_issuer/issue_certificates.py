@@ -21,7 +21,8 @@ def issue(app_config, certificate_batch_handler, transaction_handler):
         max_retry=app_config.max_retry)
     tx_id = issuer.issue(app_config.chain)
 
-    certificate_batch_handler.post_batch_actions(app_config)
+    """"Este metodo copia del workingDir al blockchainCertDir"""
+    #certificate_batch_handler.post_batch_actions(app_config)
     return tx_id
 
 

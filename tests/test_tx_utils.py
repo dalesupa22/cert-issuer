@@ -78,6 +78,7 @@ class TestTrxUtils(unittest.TestCase):
     def test_get_cost_1(self):
         cost_constants = BitcoinTransactionCostConstants(0.0001, 0.0000275, 41)
         total = tx_utils.calculate_tx_total(cost_constants, 1, 1)
+        print(total)
         self.assertEqual(total, 12750)
 
     def test_get_cost_2(self):

@@ -17,6 +17,7 @@ def get_test_data_generator():
 
 class TestMerkleTreeGenerator(unittest.TestCase):
     def test_generate(self):
+        print("holaaaa estas")
         merkle_tree_generator = MerkleTreeGenerator()
         merkle_tree_generator.populate(get_test_data_generator())
         byte_array = merkle_tree_generator.get_blockchain_data()
